@@ -23,3 +23,30 @@ body {
     box-sizing: border-box;
     border-bottom: 1px solid #ccc;
   }
+
+  #buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  button {
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:active {
+    background: #ddd;
+  }
+
+  .operator {
+    background: #f8a800;
+    color: white;
+  }
+
+  .double {
+    grid-column: span 2;
+  }
